@@ -4,7 +4,12 @@ local M = {}
 M.cache = {}
 M.config = {
 	highlight = {
-		rainbow = { "Special", "Operator", "ErrorMsg", "MathGreek" },
+		rainbow = {
+			"RainbowDelimiterRed",
+			"RainbowDelimiterYellow",
+			"RainbowDelimiterCyan",
+			"RainbowDelimiterOrange",
+		},
 		constant = "Constant",
 		symbol = "Special",
 		reference = "Special",
@@ -12,13 +17,18 @@ M.config = {
 		delim = "_delim",
 		operator = "Operator",
 		hugeoperator = "Operator",
-		chapter = "ErrorMsg",
+		chapter = "DiagnosticWarn",
 		section = "Constant",
 		subsection = "DiagnosticHint",
 		subsubsection = "Special",
-		enumerate = { enumi = "ErrorMsg", enumii = "Constant", enumiii = "DiagnosticHint", enumiv = "Special" },
-		itemize = { "ErrorMsg", "Constant", "DiagnosticHint", "Specail" },
-		greek = "MathGreek",
+		enumerate = {
+			enumi = "Constant",
+			enumii = "DiagnosticHint",
+			enumiii = "Special",
+			enumiv = "ErrorMsg",
+		},
+		itemize = { "Constant", "DiagnosticHint", "Specail", "ErrorMsg" },
+		greek = "Special",
 		operatorname = "Constant",
 		arrow = "Function",
 		relationship = "Identifier",
