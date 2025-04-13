@@ -91,6 +91,19 @@ return {
 	["\\d"] = { "d", highlight.operatorname },
 	["\\ln"] = { "ln", highlight.operatorname },
 	["\\log"] = { "log", highlight.operatorname },
+	["\\dim"] = { "dim", highlight.operatorname },
+	["\\det"] = { "det", highlight.operatorname },
+	["\\coker"] = { "coker", highlight.operatorname },
+	["\\Ann"] = { "Ann", highlight.operatorname },
+	["\\Hom"] = { "Hom", highlight.operatorname },
+	["\\SHom"] = { "𝓗 om", highlight.operatorname },
+	["\\Ext"] = { "Ext", highlight.operatorname },
+	["\\SExt"] = { "𝓔xt", highlight.operatorname },
+	["\\End"] = { "End", highlight.operatorname },
+	["\\CDiv"] = { "CDiv", highlight.operatorname },
+	["\\Hilb"] = { "Hilb", highlight.operatorname },
+	["\\Quot"] = { "Quot", highlight.operatorname },
+	["\\Supp"] = { "Supp", highlight.operatorname },
 	--Operator
 	["\\rceil"] = { "⌉", highlight.delim },
 	["\\lceil"] = { "⌈", highlight.delim },
@@ -179,6 +192,7 @@ return {
 	["\\hookrightarrow"] = { "↪", highlight.arrow },
 	["\\longrightarrow"] = { "-→", highlight.arrow },
 	["\\longleftarrow"] = { "←-", highlight.arrow },
+	["\\dashrightarrow"] = { "⇢", highlight.arrow },
 	--relationship
 	["\\bot"] = { "⊥", highlight.relationship }, --re
 	["\\cong"] = { "≅", highlight.relationship }, --re

@@ -16,7 +16,7 @@ M.config = {
 		error = "DON'T NEST LIST MORE THAN FOUR LAYER",
 	},
 	unordered = {
-		"o",
+		"○",
 		"-",
 		"+",
 		"=",
