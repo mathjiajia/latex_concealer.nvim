@@ -71,6 +71,9 @@ return {
 	["\\wp"] = { "℘", highlight.symbol },
 	["\\wr"] = { "≀", highlight.symbol },
 	["\\\\"] = { "", highlight.symbol },
+	["\\colon"] = { ":", highlight.symbol },
+	["\\coloneqq"] = { "≔", highlight.symbol },
+	["\\eqqcolon"] = { "≕", highlight.symbol },
 	["\\{"] = { "{", highlight.delim },
 	["\\}"] = { "}", highlight.delim },
 	--debackslash
@@ -174,6 +177,8 @@ return {
 	["\\downarrow"] = { "↓", highlight.arrow }, --re
 	["\\hookleftarrow"] = { "↩", highlight.arrow },
 	["\\hookrightarrow"] = { "↪", highlight.arrow },
+	["\\longrightarrow"] = { "-→", highlight.arrow },
+	["\\longleftarrow"] = { "←-", highlight.arrow },
 	--relationship
 	["\\bot"] = { "⊥", highlight.relationship }, --re
 	["\\cong"] = { "≅", highlight.relationship }, --re
