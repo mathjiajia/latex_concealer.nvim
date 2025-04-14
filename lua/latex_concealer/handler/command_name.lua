@@ -190,8 +190,8 @@ return {
 	["\\downarrow"] = { "↓", highlight.arrow }, --re
 	["\\hookleftarrow"] = { "↩", highlight.arrow },
 	["\\hookrightarrow"] = { "↪", highlight.arrow },
-	["\\longrightarrow"] = { "-→", highlight.arrow },
-	["\\longleftarrow"] = { "←-", highlight.arrow },
+	["\\longrightarrow"] = { "->", highlight.arrow },
+	["\\longleftarrow"] = { "<-", highlight.arrow },
 	["\\dashrightarrow"] = { "⇢", highlight.arrow },
 	--relationship
 	["\\bot"] = { "⊥", highlight.relationship }, --re
@@ -243,7 +243,7 @@ return {
 	["\\ddagger"] = { "‡", highlight.symbol },
 	["\\diamond"] = { "⋄", highlight.symbol },
 	["\\frown"] = { "⁔", highlight.symbol },
-	["\\gg"] = { "⟫", highlight.symbol },
+	["\\gg"] = { "≫", highlight.symbol },
 	["\\lmoustache"] = { "╭", highlight.symbol },
 	["\\P"] = { "¶", highlight.symbol },
 	["\\prime"] = { "′", highlight.symbol },
