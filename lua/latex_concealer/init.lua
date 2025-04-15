@@ -213,7 +213,11 @@ local query = vim.treesitter.query.parse("latex", query_string)
 function M.conceal(buffer, root)
 	if not root then
 		local tree = vim.treesitter.get_parser(buffer, "latex")
-		root = tree:trees()[1]:root()
+		local trees = tree and tree:trees()
+		if not trees or not trees[1] then
+			return
+		end
+		root = trees[1]:root()
 	end
 	counter.reset_all(buffer)
 	for _, node in query:iter_captures(root, buffer) do
